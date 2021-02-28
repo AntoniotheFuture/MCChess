@@ -33,7 +33,6 @@ public class MCChess extends JavaPlugin{
     
     
     /**
-     * @param args the command line arguments
      */
     
     @Override
