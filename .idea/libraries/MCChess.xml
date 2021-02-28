@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="MCChess">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/MCChess.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

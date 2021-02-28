@@ -1,0 +1,95 @@
+## YAML Template.
+---
+name: MCChess
+main: com.foxmail.antonioliang.MCChess.MCChess
+version: 1.0
+api-version: 1.13
+
+commands:
+    setbtf:
+        description: 在脚下建立战场 40*30*5。
+        usage: /<command> y
+        permission: <plugin name>.setbtf
+        permission-message: 无权限
+
+    addplayer:
+        description: 添加玩家到战场
+        usage: /<command> playername
+        permission: <plugin name>.setplayer
+        permission-message: 无权限
+        
+    startgame:
+        description: 开始游戏进程
+        usage: /<command>
+        permission: <plugin name>.startgame
+        permission-message: 无权限
+        
+    testgame:
+        description: 测试模式
+        usage: /<command>
+        permission: <plugin name>.testgame
+        permission-message: 无权限
+        
+    clearbtf:
+        description: 清空战场，包括玩家
+        usage: /<command>
+        permission: <plugin name>.clearbtf
+        permission-message: 无权限
+
+    delbtf:
+        description: 删除战场
+        usage: /<command> y
+        permission: <plugin name>.delbtf
+        permission-message: 无权限
+        
+    mccmatch:
+        description: 随机匹配一场对局
+        usage: /<command>
+        permission: <plugin name>.mccmatch
+        permission-message: 无权限
+        
+    savebt:
+        description: 将地图保存在文件中
+        usage: /<command> btname
+        permission: <plugin name>.btname
+        permission-message: 无权限
+        
+    btinfo:
+        description: 显示战场信息
+        usage: /<command>
+        permission: <plugin name>.btinfo
+        permission-message: 无权限
+    
+permissions:
+    <plugin name>.setbtf: 
+        description: 在脚下建立战场 40*30*5。
+        default: op
+    <plugin name>.addplayer: 
+        description: 添加玩家到战场
+        default: op
+    <plugin name>.startgame: 
+        description: 开始游戏进程
+        default: op
+    <plugin name>.testgame: 
+        description: 开始游戏进程
+        default: op
+    <plugin name>.clearbtf: 
+        description: 清空战场，包括玩家
+        default: op
+        
+    <plugin name>.delbtf: 
+        description: 删除战场
+        default: op
+    
+    <plugin name>.mccmatch: 
+        description: 随机匹配一场对局
+        default: true
+        
+    <plugin name>.savebt: 
+        description: 将地图保存在文件中
+        default: op
+        
+    <plugin name>.btinfo: 
+        description: 显示战场信息
+        default: op
+        
